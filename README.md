@@ -1,5 +1,4 @@
-f
-JavaScript Topics
+#JavaScript Topics
 
 1. History 
 2. Introduction 
