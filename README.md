@@ -1,4 +1,5 @@
-#JavaScript Topics
+
+# JavaScript Topics
 
 1. History 
 2. Introduction 
@@ -25,10 +26,10 @@
 23. Event 
 24. Exception Handling
 
-#JavaScript Notes###
+# JavaScript Notes
 
 
-#History
+## History
 1.	JavaScript was first created by Brendan Eich in just 10 days in May 1995 while he was working at Netscape Communications Corporation.
 2.	The initial release was called Mocha and later renamed to LiveScript, and finally JavaScript.
 3.	 Initially, JavaScript was designed to be a lightweight scripting language for adding interactivity to web pages.
@@ -45,7 +46,7 @@
 14.	It continues to evolve and adapt to the changing needs of the web, with new features and capabilities being added on a regular basis.
 
 	
-#Introduction
+## Introduction
 1. Javascript is scripting and programming language.
 2. It is purely object based language.This means that variables, functions, and even primitive data types like numbers and strings are object,everything is object in javascript.
 3. It is dynamically typed language , it means type of value stored in memory block is checked at runtime because of this nature we can store any type of value in variable.
@@ -60,16 +61,16 @@
 12. Js is used to add functionality to website.
 
 
-#Javascript Runtime Environment
+## Javascript Runtime Environment
 1. JavaScript Runtime Enviroment provides the enviroment where we can run our JavaScript code.
 2. Two javascript runtime enviroments are :
 I. Browser
 II. Node.js
-#Browser
+## Browser
 1. A browser is a software application that is used to access and view information on the World Wide Web (WWW).
 2. It allows users to interact with web pages, view multimedia content, and surf the internet.
 3. The Browser acts as a JavaScript runtime environment because it includes a JavaScript engine that interprets and executes JavaScript code
-#JavaScript Engine
+## JavaScript Engine
 1. A JavaScript engine is a computer program that executes JavaScript code.
 2. It is a core component of web browsers, server-side JavaScript platforms, and other JavaScript-based environments.
 #Some Popular JavaScript Engines Include:
@@ -77,7 +78,7 @@ II. Node.js
 2. SpiderMonkey : developed by Mozilla, used in Firefox
 3. JavaScriptCore : developed by Apple, used in Safari
 4. Chakra : developed by Microsoft, used in Microsoft Edge and Internet Explorer (legacy)
-#Node.Js
+## Node.Js
 1. The main reason of javascript popularity.
 2. Node.js is a software application that executes JavaScript code. It is not a framework or a library.
 3. It allows developers to run JavaScript code outside of a web browser, such as on a server or command-line interface.
@@ -87,7 +88,7 @@ II. Node.js
 7. Because after introduction of Nodejs, we were able to run javascript anywhere like in web servers, as command-line tools, desktop applications, and even IoT (Internet of Things) devices.
 
 
-Features of JavaScript
+# Features of JavaScript
 
 1. **Scripting Language**:
    - **What it means**: JavaScript is used to write small programs that automate tasks in web pages.
@@ -126,7 +127,7 @@ Features of JavaScript
    - **Why we call it that**: This simplicity makes it easier to write and understand JavaScript code. Even though it does one task at a time, JavaScript can handle many tasks quickly by using techniques like callbacks and promises.
 
 
-#Token
+## Token
 1. It is the smallest unit of programming language.
 2. We have 5 types of operators,punctuators,keywords ,identifiers , literals.
 #Operators
@@ -314,28 +315,28 @@ These operators are essential for performing various operations in JavaScript, f
 
 
 
-#Punctuators
+## Punctuators
 1. These are symbols used to group, separate, or punctuate code.
 2. Examples include parentheses (), curly braces {}, square brackets [], commas ,, semicolons ;, and the period . (used to access object properties).
-#Keywords
+## Keywords
 1. These are reserved words that have a special meaning in the language.
 2. Examples like if, else, for, while, function, and return,etc.
-#Identifiers
+## Identifiers
 1. These are user given names to variables, functions, and other objects in the code.
 2. Identifier name can not start with number.
 3. Identifier name should not be a keyword
 4. If Identifier is of multiple word, instead of using space, we have to use underscore.
 5. identifier name should not have special character but can start with underscore(_) and dollar($).
-#Literals
+## Literals
 1. These are values used in our program like number(2),string('hello world') , etc.
 #Types Of Literals / Datatypes
 1. Primitive
 2. Non-Primitive
-#Primitive Literals
+## Primitive Literals
 1. In JavaScript, a primitive data type is a data type that represents a single value.
 2. JavaScript treats primitive values as immutable values, means that their value cannot be changed. Instead, when you perform an operation that appears to modify a primitive value, you are actually creating a new object with new value and assigning it to a variable. Here , variable will hold the reference of latest object with new value and the previous object with it's value will garbage collected.
 3. We have 8 primitive types of literals -number , bigint , boolean , nan , undefined , null , symbol , string..
-#Primitive Datatypes
+## Primitive Datatypes
 1. Number
 1. This data type represents a numeric value. It can store both integers and floating-point values.
 2. It's range is from -253-1 to 2 53-1 .
@@ -375,20 +376,20 @@ In second case , js engine is able to compute anything because we can not subtra
 - It allow line breaks and whitespaces.
 - It is also called as template string.
 - Template strings allow us to insert variables and expressions directly in the string using ` ${ variable_name } ` notation.
-#Non-Primitive Literals
+## Non-Primitive Literals
 1. In JavaScript, a non primitive data type is a data type that represents multi value.
 2. JavaScript treats non-primitive values as mutable values, means that their value can be changed. When we try to update a value , new object is not created . Here value is changed in the same memory block.
 3. Non-primitive datatype : object ,array , etc
-#Scope
+## Scope
 1. Scope defines the visibility or accessibility of a variable.
 #We Have Two Scopes
 1. Global Scope
 2. Local Scope
-#Global Scope
+## Global Scope
 1. The variable declared in global scope can be accessed anywhere in the program.
 2. Global scope has the highest accessibility.
 3. Variable declared with var goes in Global scope.
-#Local Scope
+## Local Scope
 1. Local/block scope/function scope
 2. The variable declared in local scope can be accessed in that block only i.e. we can not access the variable from outside.
 3. JS engine creates local scope for functions and blocks.
@@ -408,7 +409,7 @@ Chrome represent it as - Script scope.
 
 
 
-#Global Execution Context
+## Global Execution Context
 1. When we give JS code to the browser, JS Engine will allocate (create) a global memory block for the execution of JavaScript code, called Global Execution Context.
 2. Here, we have a window variable which have reference of Global Execution Context.
 #Window Variable
@@ -421,17 +422,17 @@ Chrome represent it as - Script scope.
 #JavaScript Code Run In Two Phases
 1. Variable phase
 2. Execution phase
-#Variable Phase
+## Variable Phase
 1. In variable phase, JS Engine will check the complete JS Code and it will search for variable declaration statement.
 2. If variable is declared then JS Engine allocate (provide) memory for them.
 3. Variable declared with var will be initialized storing "undefined" at the time of memory block creation.
 Variable declared with let and const will remain uninitialized (empty) at the time of memory block creation.
-#Execution Phase
+## Execution Phase
 1.	 In Execution phase, JS Engine will execute the instruction line-by-line.
 
 
 
-#Var
+## Var
 1. Variable declared with var goes to global scope.
 2. We can redeclare variable with same name in same scope.
 3. We can update the value of variable.
@@ -439,7 +440,7 @@ Variable declared with let and const will remain uninitialized (empty) at the ti
 5. Variable declared with var , can be hoisted.
 6. Variable declared inside block , will go to global scope.
 7. Variable declared inside function , will not go to global scope. It will be accessible inside function only.
-#Let
+## Let
 1. Variable declared with let is block scoped.
 2. We cannot redeclare variable with same name in same scope.
 3. We can update the value of variable.
@@ -448,7 +449,7 @@ Variable declared with let and const will remain uninitialized (empty) at the ti
 6. The variable declared using let does not belongs to global scope , we cannot access them with the help of window variable.
 7. The variable declared using let is hoisted and belongs to temporal deadzone. Therefore it cannot be used before initialization (because at that moment it is uninitialized - TDZ) .
 8. Variable declared inside function will be accessible inside function only.
-#Const
+## Const
 1. Variable declared with const is block scope.
 2. We cannot redeclare variable with same name in same scope.
 3. The value of variable can not be modified.
@@ -456,7 +457,7 @@ Variable declared with let and const will remain uninitialized (empty) at the ti
 5. The variable declared using const is hoisted and belongs to temporal deadzone. Therefore it cannot be used before initialization (because at that moment it is uninitialized - TDZ) .
 6. The variable declared using const inside block ,does not belongs to global scope we cannot use them with the help of window.
 7. Variable declared inside function will be accessible inside function only.
-#Practice Questions
+## Practice Questions
 1.	
 console.log("start");
 let a = 10;
@@ -531,7 +532,7 @@ console.log("end");
 
 
 
-#Functions
+# Functions
 1. Function is object.
 2. Function is a block of instruction which is used to perform a specific task.
 3. A function get executed only when it is called.
@@ -547,17 +548,18 @@ console.log("end");
 13. Variable written inside function even using var have local scope.
 14. Inside a function we can use the members of global scope.
 15. In javascript 'this' is a property of every function.(every function will have 'this' Keyword except arrow function)
-#Parameter
+    
+## Parameter
 1. The variables declared in the function defination is known as parameters.
 2. The parameters have local scope (can be used only inside function body).
 3. Parameters are used to hold the values passed by caller (or calling statement).
-#Arguments
+## Arguments
 1. The values passed in the method call statement is known as arguments.
 2. Note : An argument can be a literal, variable or an expression which gives a results.
-#Return Keyword
+## Return Keyword
 1. It is a keyword used as control transfer statement in a function.
 2. Return will stop the execution of the function and transfer control along with data to the caller.
-#Ways To Create Functions
+## Ways To Create Functions
 1. Function declaration statement : Create using function keyword
 1. 
 Syntax :
@@ -594,7 +596,7 @@ output : Good Morning
 2. In this approach, we generate Generic Function. Here function task is not predefined. It perform multiple task not only single task
 3. The Function which accept another function as a parameter or return a function is known as 'Higher Order Function'.
 4. The Function which is passed to another function or the function which is returned by another function is known as 'Callback Function'.
-#Types Of Functions
+# Types Of Functions
 1. Function decalaration statement : Using function keyword
 2. Function as expression / expression function
 3. Immediate Invoke Function (IIF)
@@ -615,7 +617,7 @@ output : Good Morning
 1. The Function which accept another function as a parameter or return a function is known as 'Higher Order Function'.
 6. Callback Function
 1. The Function which is passed to another function or the function which is returned by another function is known as 'Callback Function'.
-#Nested Function
+## Nested Function
 1. The function inside another function is called as nested function.
 2. 
 Example :
